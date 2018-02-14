@@ -6,9 +6,17 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
-
   <body>
+    <div class="navbar-wagon">
+    <div class="home"><%= link_to "Simple AirBnB", flats_path %></div>
+    <div class="navbar-wagon-right hidden-xs hidden-sm">
+      <%= link_to "Add flat", new_flat_path, class: "green btn btn-default" %>
+    </div>
+  </div>
     <%= yield %>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
   </body>
 </html>

@@ -1,0 +1,18 @@
+<div class="container"> 
+  <h2>Create a new flat</h2>
+  <div class="form">
+    <%= form_for @flat do |f| %>
+      <%= f.label :name, class: "form-text" %>
+      <%= f.text_field :name, class: "form-control" %>
+      <%= f.label :address, class: "form-text" %>
+      <%= f.text_field :address, class: "form-control" %>
+      <%= f.label :description, class: "form-text" %>
+      <%= f.text_field :description, class: "box form-control" %>
+      <%= f.label :price_per_night, class: "form-text" %>
+      <%= f.number_field :price_per_night, class: "form-control" %>
+      <%= f.label :number_of_guests, class: "form-text" %>
+      <%= f.number_field :number_of_guests, class: "form-control" %>
+      <%= f.submit "Add flat to AirBnB", class: "btn btn-default form-control" %>
+    <% end %>
+  </div>
+</div>

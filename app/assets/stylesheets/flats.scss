@@ -1,0 +1,13 @@
+@import "components/navbar.scss";
+@import "components/cards.scss";
+@import "components/form.scss";
+@import "components/show.scss";
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.home a, .home a:hover {
+  text-decoration: none;
+  color: white;
+}
